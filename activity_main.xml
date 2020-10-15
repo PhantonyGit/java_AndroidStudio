@@ -9,7 +9,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="350dp"
+        android:layout_marginBottom="200dp"
         android:orientation="vertical"
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,43 +19,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/catamaran_semibold"
-            android:gravity="center"
-            android:text="Our Resipes"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#DF0A0A"
-            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dota" />
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:columnCount="2">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/catamaran_semibold"
-                        android:text="UserName"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp" />
 
-                    <EditText
-                        android:id="@+id/UsernameField"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-<!--                    <EditText-->
-<!--                        android:id="@+id/UsernameSecondField"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent" />-->
+            <EditText
+                android:id="@+id/UsernameField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/catamaran_semibold"
                 android:text="Password"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="18sp" />
@@ -66,66 +55,30 @@
                 android:layout_height="match_parent"
                 android:inputType="textPassword" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/catamaran_semibold"
-                android:text="Gender"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textSize="18sp" />
-
-            <RadioGroup
-                android:id="@+id/RadioGroup"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/MaleButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Male" />
-
-                <RadioButton
-                    android:id="@+id/FemaleButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Female" />
-
-            </RadioGroup>
-
         </GridLayout>
 
-        <Button
-            android:id="@+id/LoginButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#E10A0A"
-            android:text="Login" />
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:columnCount="2"
-            >
+            android:layout_gravity="center"
+            android:columnCount="2">
 
-            <TextView
-                android:layout_width="188dp"
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Haven't Register Yet ?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textSize="18sp" />
+                android:backgroundTint="#E10A0A"
+                android:text="Login" />
 
-            <TextView
-                android:id="@+id/RegisterLink"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/RegisterButton"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/catamaran_semibold"
-                android:text="Clik here"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="#F80707"
-                android:textSize="18sp" />
+                android:backgroundTint="#E10A0A"
+                android:text="Register" />
 
         </GridLayout>
-
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
